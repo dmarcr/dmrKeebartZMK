@@ -176,35 +176,37 @@
         RParen {
             bindings = <&kp RIGHT_PARENTHESIS>;
             require-prior-idle-ms = <100>;
-            key-positions = <42 43>;
+            key-positions = <0 1>;
         };
 
         LParen {
             bindings = <&kp LEFT_PARENTHESIS>;
             require-prior-idle-ms = <100>;
-            key-positions = <42 43>;
+            key-positions = <1 2>;
         };
 
         Exclam {
             bindings = <&kp EXCLAMATION>;
             require-prior-idle-ms = <100>;
-            key-positions = <42 43>;
+            key-positions = <2 3>;
         };
 
         Capslock { bindings = <&kp CAPS>; 
-            key-positions = <42 43>;
+            key-positions = <3 4>;
         };
 
-        Delete { bindings = <&kp DEL>; };
+        Delete { bindings = <&kp DEL>; 
+            key-positions = <5 6>;
+        };
 
         Base { bindings = <&to 7>; 
-            key-positions = <42 43>;
+            key-positions = <4 5>;
         };
 
         Hyphen {
             bindings = <&kp MINUS>;
             require-prior-idle-ms = <100>;
-            key-positions = <42 43>;
+            key-positions = <5 6>;
         };
     };
 
