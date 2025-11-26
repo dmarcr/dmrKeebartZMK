@@ -170,36 +170,36 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        RParen {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            require-prior-idle-ms = <100>;
-        };
-
-        LParen {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            require-prior-idle-ms = <100>;
-        };
-
-        Exclam {
-            bindings = <&kp EXCLAMATION>;
-            require-prior-idle-ms = <100>;
-        };
-
-        Capslock { bindings = <&kp CAPS>; };
-
-        Delete { bindings = <&kp DEL>; };
-
-        Base { bindings = <&to 7>; };
-
-        Hyphen {
-            bindings = <&kp MINUS>;
-            require-prior-idle-ms = <100>;
-        };
-    };
-
+    /* combos { */
+    /*     compatible = "zmk,combos"; */
+    /**/
+    /*     RParen { */
+    /*         bindings = <&kp RIGHT_PARENTHESIS>; */
+    /*         require-prior-idle-ms = <100>; */
+    /*     }; */
+    /**/
+    /*     LParen { */
+    /*         bindings = <&kp LEFT_PARENTHESIS>; */
+    /*         require-prior-idle-ms = <100>; */
+    /*     }; */
+    /**/
+    /*     Exclam { */
+    /*         bindings = <&kp EXCLAMATION>; */
+    /*         require-prior-idle-ms = <100>; */
+    /*     }; */
+    /**/
+    /*     Capslock { bindings = <&kp CAPS>; }; */
+    /**/
+    /*     Delete { bindings = <&kp DEL>; }; */
+    /**/
+    /*     Base { bindings = <&to 7>; }; */
+    /**/
+    /*     Hyphen { */
+    /*         bindings = <&kp MINUS>; */
+    /*         require-prior-idle-ms = <100>; */
+    /*     }; */
+    /* }; */
+    /**/
     keymap {
         compatible = "zmk,keymap";
 
