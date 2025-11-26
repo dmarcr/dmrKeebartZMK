@@ -191,7 +191,7 @@
 
         Delete { bindings = <&kp DEL>; };
 
-        Base { bindings = <&to 6>; };
+        Base { bindings = <&to 7>; };
 
         Hyphen {
             bindings = <&kp MINUS>;
@@ -220,6 +220,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+
+            label = "NUMBER";
         };
 
         dmrSym {
@@ -229,6 +231,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+
+            label = "SYMBOL";
         };
 
         dmrNav {
@@ -238,6 +242,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+
+            label = "NAV";
         };
 
         dmrInput {
@@ -247,15 +253,30 @@
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+
+            label = "INPUT";
         };
 
         dmrFn {
+            bindings = <
+&to 6            &kp C_BRI_DN     &kp C_BRI_UP     &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans  &kp PSCRN        &f7_f19  &f8_f20  &f9_f21  &f12_f24  &kp DEL
+&rgb_ug RGB_EFF  &kp              &kp              &kp         &kp           &kp           &trans  &trans  &kp SLCK         &f4_f16  &f5_f17  &f6_f18  &f11_f23  &kp ESC
+&rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp C_PREV  &kp C_PP      &kp C_NEXT                    &kp PAUSE_BREAK  &f1_f13  &f2_f14  &f3_f15  &f10_f22  &to 4
+                                                   &trans      &trans        &trans                        &trans           &trans   &to 0
+            >;
+
+            label = "FUNCTION";
+        };
+
+        dmrSys {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
+
+            label = "SYSTEM";
         };
 
         default_layer {
@@ -271,7 +292,7 @@
 &kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T      &none  &none  &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G      &none  &none  &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B                    &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 7  &kp SPACE                &kp RET  &mo 8  &kp RALT
+                         &kp LGUI  &mo 8  &kp SPACE                &kp RET  &mo 9  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
