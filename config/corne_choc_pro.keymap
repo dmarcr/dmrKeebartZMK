@@ -176,6 +176,7 @@
             compatible = "zmk,behavior-toggle-layer";
             label = "LOCKON";
             #binding-cells = <1>;
+            locking;
         };
     };
 
