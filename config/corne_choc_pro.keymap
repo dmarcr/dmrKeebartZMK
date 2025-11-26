@@ -43,25 +43,13 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 40 41 42 43 44 45>;
         };
 
-        hldto: hold_to {
+        hldto: hldto {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TO";
+            label = "HLDTO";
             bindings = <&kp>, <&to>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        qlt: quick_layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "QUICK_LAYER_TAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <275>;
-            quick-tap-ms = <150>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <150>;
         };
 
         f1_f13: f1_f13 {
@@ -178,6 +166,15 @@
             #binding-cells = <1>;
             locking;
         };
+
+        moto: moto {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOTO";
+            bindings = <&mo>, <&to>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -218,7 +215,8 @@
 
         Base {
             bindings = <&to 0>;
-            key-positions = <40 45>;
+            key-positions = <43 42>;
+            require-prior-idle-ms = <100>;
         };
 
         Hyphen {
@@ -226,18 +224,6 @@
             require-prior-idle-ms = <100>;
             key-positions = <36 37>;
             layers = <0>;
-        };
-
-        SystemL {
-            bindings = <&to 6>;
-            key-positions = <28 40>;
-            require-prior-idle-ms = <200>;
-        };
-
-        SystemR {
-            bindings = <&to 6>;
-            key-positions = <45 39>;
-            require-prior-idle-ms = <200>;
         };
     };
 
@@ -283,10 +269,10 @@
 
         dmrBase {
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp E                  &kp R          &kp T  &none  &none  &kp Y      &kp U          &kp I                  &kp O         &kp P            &kp BSPC
-&kp ESC    &lhrm LGUI A  &lhrm LALT S  &lhrm LCTRL D          &lhrm LSHFT F  &kp G  &none  &none  &kp H      &rhrm RSHFT J  &rhrm RCTRL K          &rhrm RALT L  &rhrm RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z         &kp X         &kp C                  &kp V          &kp B                &kp N      &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp RSHFT
-                                       &hldto LS(LC(LALT)) 4  &mo 1          &mo 3                &kp ENTER  &qlt 2 SPACE   &hldto RS(RC(RALT)) 5
+&kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T      &none  &none  &kp Y      &kp U          &kp I                  &kp O         &kp P            &kp BSPC
+&kp ESC    &lhrm LGUI A  &lhrm LALT S  &lhrm LCTRL D  &lhrm LSHFT F  &kp G      &none  &none  &kp H      &rhrm RSHFT J  &rhrm RCTRL K          &rhrm RALT L  &rhrm RGUI SEMI  &kp SQT
+&kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B                    &kp N      &kp M          &kp COMMA              &kp DOT       &kp FSLH         &kp RSHFT
+                                       &moto 3 4      &mo 1          &kp ENTER                &kp SPACE  &mo 2          &hldto RS(RC(RALT)) 5
             >;
 
             label = "BASE";
