@@ -200,6 +200,16 @@
     /*     }; */
     /* }; */
     /**/
+
+    combos {
+        compatible = "zmk,combos";
+
+        vase {
+            bindings = <&none>;
+            key-positions = <42 43>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
