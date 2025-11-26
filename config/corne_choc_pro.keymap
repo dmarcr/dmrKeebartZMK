@@ -216,10 +216,10 @@
 
         dmrNum {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans    &trans    &trans     &trans     &trans       &trans  &trans  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp BSPC
+&tog 1  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &key_repeat  &trans  &trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp ESC
+&trans  &trans    &trans    &trans     &trans     &trans                       &kp SPACE        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp KP_NUM
+                            &trans     &trans     &trans                       &kp KP_DOT       &kp KP_N0  &trans
             >;
 
             label = "NUMBER";
