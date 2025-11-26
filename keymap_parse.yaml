@@ -1,0 +1,352 @@
+layout: {zmk_keyboard: corne_choc_pro, layout_name: default_layout}
+layers:
+  BASE:
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - ''
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - BSPC
+  - ESC
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - ''
+  - ''
+  - H
+  - {t: J, h: RSHFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RGUI}
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - {t: INPUT, h: Sft+Ctl+LALT}
+  - NUMBER
+  - NAV
+  - ENTER
+  - {t: SPACE, h: SYMBOL}
+  - {t: FUNCTION, h: Sft+Ctl+RALT}
+  NUMBER:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP SLASH
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - BSPC
+  - '&lockon 1'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - '&key_repeat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP MULTIPLY
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - KP NUM
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - KP DOT
+  - KP 0
+  - {t: ▽, type: trans}
+  SYMBOL:
+  - '{'
+  - '!'
+  - '@'
+  - '#'
+  - '*'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '%'
+  - '&'
+  - '~'
+  - ''
+  - DEL
+  - BSPC
+  - (
+  - _
+  - '='
+  - '-'
+  - +
+  - )
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&key_repeat'
+  - RSHFT
+  - RCTRL
+  - RALT
+  - {t: ':', h: RGUI}
+  - '"'
+  - '['
+  - \
+  - '|'
+  - ^
+  - $
+  - ']'
+  - SPACE
+  - '`'
+  - <
+  - '>'
+  - '?'
+  - {t: ESC, s: '`'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - DEL
+  - BSPC
+  - '&lockon 3'
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - '&key_repeat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - APP
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+LEFT
+  - Ctl+DOWN
+  - Ctl+UP
+  - Ctl+RIGHT
+  - ''
+  - INS
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  INPUT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc MOVE_X(-60)'
+  - '&msc MOVE_Y(60)'
+  - '&msc MOVE_Y(-60)'
+  - '&msc MOVE_X(60)'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - '&key_repeat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(-1000)'
+  - '&mmv MOVE_Y(1000)'
+  - '&mmv MOVE_Y(-1000)'
+  - '&mmv MOVE_X(1000)'
+  - ''
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(-3000)'
+  - '&mmv MOVE_Y(3000)'
+  - '&mmv MOVE_Y(-3000)'
+  - '&mmv MOVE_X(3000)'
+  - ''
+  - {t: FUNCTION, h: toggle}
+  - {t: BASE, h: toggle}
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - '&mkp MB3'
+  FUNCTION:
+  - {t: SYSTEM, h: toggle}
+  - BRI DN
+  - BRI UP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PSCRN
+  - {t: F7, s: F19}
+  - {t: F8, s: F20}
+  - {t: F9, s: F21}
+  - {t: F12, s: F24}
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - '&key_repeat'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SLCK
+  - {t: F4, s: F16}
+  - {t: F5, s: F17}
+  - {t: F6, s: F18}
+  - {t: F11, s: F23}
+  - ESC
+  - ''
+  - ''
+  - ''
+  - PREV
+  - PP
+  - NEXT
+  - PAUSE BREAK
+  - {t: F1, s: F13}
+  - {t: F2, s: F14}
+  - {t: F3, s: F15}
+  - {t: F10, s: F22}
+  - {t: INPUT, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BASE, h: toggle}
+  SYSTEM:
+  - BT CLR
+  - '&bt_0'
+  - '&bt_1'
+  - '&bt_2'
+  - '&bt_3'
+  - '&bt_4'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BASE, h: toggle}
+  - {t: NUMBER, h: toggle}
+  - {t: SYMBOL, h: toggle}
+  - {t: NAV, h: toggle}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - OUT USB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - RGB BRI
+  - RGB HUI
+  - RGB SAI
+  - RGB SPI
+  - '&bootloader'
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&studio_unlock'
+  - RGB EFF
+  - RGB BRD
+  - RGB HUD
+  - RGB SAD
+  - RGB SPD
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [11, 12]
+  k: )
+  l: [BASE, NUMBER]
+- p: [1, 2]
+  k: (
+  l: [BASE, NUMBER]
+- p: [37, 38]
+  k: '!'
+  l: [BASE]
+- p: [28, 39]
+  k: CAPS
+  l: [BASE]
+- p: [12, 13]
+  k: DEL
+  l: [BASE, NUMBER, SYMBOL, NAV]
+- p: [40, 45]
+  k: {t: BASE, h: toggle}
+- p: [36, 37]
+  k: '-'
+  l: [BASE]

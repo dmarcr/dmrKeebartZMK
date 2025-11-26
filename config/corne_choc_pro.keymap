@@ -314,9 +314,9 @@
 
         dmrInput {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans       &trans  &trans  &msc MOVE_X(-20)   &msc MOVE_Y(20)   &msc MOVE_Y(-20)   &msc MOVE_X(20)   &mkp MB4  &mkp MB5
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &key_repeat  &trans  &trans  &mmv MOVE_X(-100)  &mmv MOVE_Y(100)  &mmv MOVE_Y(-100)  &mmv MOVE_X(100)  &none     &kp ESC
-&trans  &trans    &trans    &trans     &trans     &trans                       &mmv MOVE_X(-300)  &mmv MOVE_Y(300)  &mmv MOVE_Y(-300)  &mmv MOVE_X(300)  &none     &to 5
+&trans  &trans    &trans    &trans     &trans     &trans       &trans  &trans  &msc MOVE_X(-60)   &msc MOVE_Y(60)   &msc MOVE_Y(-60)   &msc MOVE_X(60)   &mkp MB4  &mkp MB5
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &key_repeat  &trans  &trans  &mmv MOVE_X(-1000) &mmv MOVE_Y(1000) &mmv MOVE_Y(-1000) &mmv MOVE_X(1000) &none     &kp ESC
+&trans  &trans    &trans    &trans     &trans     &trans                       &mmv MOVE_X(-3000) &mmv MOVE_Y(3000) &mmv MOVE_Y(-3000) &mmv MOVE_X(3000) &none     &to 5
                             &to 0      &mkp MB4   &mkp MB5                     &mkp MB2           &mkp MB1          &mkp MB3
             >;
 
