@@ -227,10 +227,10 @@
 
         dmrSym {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&kp LEFT_BRACE        &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &kp ASTRK   &kp RIGHT_BRACE        &trans  &trans  &kp PERCENT  &kp AMPERSAND  &kp TILDE      &none             &none             &kp BSPC
+&kp LEFT_PARENTHESIS  &kp UNDERSCORE   &kp EQUAL    &kp MINUS  &kp PLUS    &kp RIGHT_PARENTHESIS  &trans  &trans  &key_repeat  &kp RSHFT      &kp RCTRL      &kp RALT          &rhrm RGUI COLON  &kp DOUBLE_QUOTES
+&kp LBKT              &kp BSLH         &kp PIPE     &kp CARET  &kp DOLLAR  &kp RBKT                               &kp SPACE    &kp GRAVE      &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION      &gresc
+                                                    &trans     &trans      &trans                                 &trans       &trans         &trans
             >;
 
             label = "SYMBOL";
